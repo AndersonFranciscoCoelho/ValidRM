@@ -1,0 +1,149 @@
+CELULA 3
+  id_instrumento            produto  ...         nocional taxa_cupom
+0          I0001  Credito_Prefixado  ... 1,089,894.221756   0.118146
+1          I0002  Credito_Prefixado  ... 1,861,214.446586   0.150223
+2          I0003  Credito_Prefixado  ... 1,878,617.910584   0.167106
+3          I0004  Credito_Prefixado  ... 2,025,645.844890   0.137023
+4          I0005  Credito_Prefixado  ... 1,734,173.778063   0.103677
+
+[5 rows x 8 columns]
+
+CELULA 5
+                           CPR_3m   CPR_6m  ...  CPR_36m  amplitude_pp
+produto         segmento                    ...                       
+Credito_Pessoal PF_B     0.258161 0.297892  ... 0.280774      4.958437
+Veiculos        PJ       0.170500 0.190352  ... 0.189601      3.810527
+                PF_B     0.246464 0.265632  ... 0.228169      3.746353
+Credito_Pessoal PJ       0.249596 0.275405  ... 0.241217      3.418858
+                PF_A     0.248105 0.272262  ... 0.240189      3.207335
+Imobiliario     PF_B     0.099146 0.112036  ... 0.125294      2.783194
+                PF_A     0.092322 0.113309  ... 0.116920      2.702145
+                PJ       0.071175 0.088085  ... 0.092267      2.109187
+Veiculos        PF_A     0.190736 0.192643  ... 0.200529      1.862502
+
+[9 rows x 6 columns]
+
+CELULA 6
+<Figure size 640x480 with 1 Axes>
+
+CELULA 8
+           produto segmento  cpr_segmento  cpr_produto  diferenca_pp
+1  Credito_Pessoal     PF_B      0.306686     0.273936      3.274986
+7         Veiculos     PF_B      0.248263     0.217675      3.058730
+0  Credito_Pessoal     PF_A      0.252183     0.273936     -2.175322
+5      Imobiliario       PJ      0.087760     0.109220     -2.145978
+8         Veiculos       PJ      0.201101     0.217675     -1.657422
+4      Imobiliario     PF_B      0.125236     0.109220      1.601630
+6         Veiculos     PF_A      0.204797     0.217675     -1.287798
+2  Credito_Pessoal       PJ      0.264396     0.273936     -0.954020
+3      Imobiliario     PF_A      0.118101     0.109220      0.888069
+
+CELULA 10
+                 P1      P99  ...  choque_1_ano  erro_relativo_vs_1_ano
+prazo_anos                    ...                                      
+0.250000   1.024180 1.083573  ...      1.061046               -0.020789
+0.500000   1.021082 1.069176  ...      1.061046               -0.007605
+1.000000   1.013284 1.061046  ...      1.061046                0.000000
+2.000000   1.006530 1.050920  ...      1.061046                0.009635
+5.000000   0.990522 1.028679  ...      1.061046                0.031464
+7.000000   0.990172 1.024339  ...      1.061046                0.035835
+10.000000  0.986939 1.015615  ...      1.061046                0.044732
+15.000000  0.979545 1.014208  ...      1.061046                0.046181
+20.000000  0.974505 1.007654  ...      1.061046                0.052986
+
+[9 rows x 5 columns]
+
+CELULA 11
+<Figure size 640x480 with 1 Axes>
+
+CELULA 13
+                         mean        std  min  max
+segmento                                          
+Atacado            155.750000  21.377050  126  189
+Varejo_Estavel     763.000000 105.212828  588  945
+Varejo_Nao_Estavel 308.875000  40.360670  252  378
+
+CELULA 14
+<Figure size 640x480 with 1 Axes>
+
+CELULA 16
+                     metodo   choque
+0             Média simples 0.043889
+1                    Máximo 0.105000
+2  Média ponderada por DV01 0.065019
+
+CELULA 17
+<Figure size 640x480 with 1 Axes>
+
+CELULA 19
+                                 valor
+média_sem_limite              0.035467
+média_com_limite              0.031457
+percentual_meses_limite_ativo 0.308333
+máximo_sem_limite             0.079974
+redução_média_relativa        0.113064
+
+CELULA 21
+  cooperativa   maximo  ...  media_cauda_95  diferenca_maximo_p99_pp
+3     Coop_04 0.253071  ...        0.154906                 7.628444
+0     Coop_01 0.197996  ...        0.114798                 6.615942
+4     Coop_05 0.219467  ...        0.127605                 5.306708
+8     Coop_09 0.250712  ...        0.149393                 3.455761
+6     Coop_07 0.203941  ...        0.130548                 2.222885
+1     Coop_02 0.262831  ...        0.155766                 2.082791
+9     Coop_10 0.275358  ...        0.174508                 1.678040
+7     Coop_08 0.281493  ...        0.178741                 1.543371
+5     Coop_06 0.232586  ...        0.149922                 1.406070
+2     Coop_03 0.192490  ...        0.129079                 0.316601
+
+[10 rows x 6 columns]
+
+CELULA 23
+                cenario            vp_base        vp_estresse         delta_eve
+0  Uniforme 6/12/18/24m 444,472,993.921211 430,164,955.959010 14,308,037.962200
+1            Mais curto 461,508,545.606803 451,333,600.694055 10,174,944.912748
+2            Mais longo 428,647,578.967109 410,550,825.524313 18,096,753.442796
+3            Tudo 1 ano 454,545,454.545455 442,477,876.106195 12,067,578.439260
+4                Sem PL           0.000000           0.000000          0.000000
+
+CELULA 25
+         cluster  data_pior  pior_21_dias  pior_pos_2021  diferenca
+0      Bancos_S1 2020-04-06      1.965651       0.793982   1.171669
+1         Demais 2025-05-28      1.020217       1.020217   0.000000
+2  Internacional 2020-04-07      0.799236       0.310385   0.488851
+3    Qualitativo 2020-04-08      0.738635       0.411798   0.326837
+4       Veiculos 2020-04-08      1.122945       0.363928   0.759017
+
+CELULA 27
+                          erro_absoluto_medio  ...  raiz_erro_quadratico_medio
+produto         segmento                       ...                            
+Credito_Pessoal PF_A                 0.002992  ...                    0.004039
+                PF_B                 0.002543  ...                    0.003250
+                PJ                   0.002704  ...                    0.003461
+Imobiliario     PF_A                 0.002935  ...                    0.003567
+                PF_B                 0.002747  ...                    0.003427
+                PJ                   0.002411  ...                    0.003051
+Veiculos        PF_A                 0.003171  ...                    0.004057
+                PF_B                 0.002791  ...                    0.003475
+                PJ                   0.002993  ...                    0.003823
+
+[9 rows x 3 columns]
+
+CELULA 28
+                    erro_absoluto_medio        vies  raiz_erro_quadratico_medio
+segmento                                                                       
+Atacado                       21.525000  -19.425000                   24.286570
+Varejo_Estavel               107.100000 -107.100000                  117.581249
+Varejo_Nao_Estavel            37.275000  -37.275000                   46.188067
+
+CELULA 30
+                                               tema  ...  criticidade
+0                         CPR - janela de estimação  ...        MÉDIO
+1               Risco de base - referência de 1 ano  ...        BAIXO
+2  Depósitos sem vencimento - estabilidade temporal  ...         ALTO
+3                    Choque interno - média simples  ...         ALTO
+4                     Choque interno - limite de 4%  ...         ALTO
+5              Depósitos à vista - máximo histórico  ...         ALTO
+6                        Capital próprio - alocação  ...         ALTO
+
+[7 rows x 4 columns]
